@@ -44,7 +44,7 @@
 const fib = (n) =>{
     let arr = [1, 1]; // assign a start point for the array greater than 2, the length of the array is = num so start with the two 1,1 values.
     for (let i = 2; i < n; i++){  //user iteration to add new values to the array
-      arr.push(arr[i - 2] + arr[i -1]) // as it iterates through, push a new value equal to i-2 + i-1 / or n-2 + n-1. start at i=2, n-2 is 1 in the array at index 0, and n-1 is the next 2 at index 1. When i=3, n-2 is index 1/ "1" and n-1 is index 2/"2". At i = 4, n-2 is index 2/ "2" and n-1 is index 3/ "3", so on an so forth. 
+      arr.push(arr[i - 2] + arr[i -1]) // as it iterates through, push a new value equal to i-2 + i-1 / or n-2 + n-1. startšat i=2, n-2 is 1 in the array at index 0, and n-1 is the next 2 at index 1. When i=3, n-2 is index 1/ "1" and n-1 is index 2/"2". At i = 4, n-2 is index 2/ "2" and n-1 is index 3/ "3", so on an so forth. 
     }
    return arr //return the fibonnaci'd array
   }
@@ -78,7 +78,7 @@ const oddArraySorted = (arr) =>{
     let sortedArray = [] //define an empty array to fill up
     for(let i = 0; i < arr.length; i++){ //iterate through the array
         if(typeof arr[i] === "number" && arr[i] % 2 !== 0){ //check for typeof to = number AND check for odd numbers
-            sortedArray.push(arr[i]) // push values that match the condition of a number and being odd into the empty array
+            sortedArray.push(arr[i]) // push values that match the condition of being typeof number and being odd into the empty array
             sortedArray.sort((a, b) => a - b); //organize the new array from least to greatest using sort.*Ascending = a-b
         }
 

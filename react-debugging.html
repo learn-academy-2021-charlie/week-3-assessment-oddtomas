@@ -78,7 +78,7 @@
             padding: "10px"
           }
           return(
-            <> {/*drawCard is undefined because it's missing 'this'   */}
+            <> {/*drawCard is undefined because it's missing 'this', the drawcard function is defined in the main App component   */}
               <button onClick={this.drawCard}>
                 Click to Draw a Card
               </button> {/*shuffle is undefined because it's missing 'this'   */}
@@ -86,7 +86,7 @@
                 Return Cards and Shuffle Deck
               </button>
               <div style={handStyles}>
-                {/* fix map property undefined? use conditional render?   */}
+                {/* fix map property undefined? use conditional render? I'm honestly not 100% on how this error works or why the solution worked  */}
                 {this.props.hand && this.props.hand.map((card, index) => {
                   return (
                     <div style={cardStyles} key={index}>
