@@ -13,6 +13,14 @@
 
 // Reminder: The test will call your function
 
+//test example:
+/* describe("areYouHungry", () => {
+    it("returns eat food or keep working based on input", () => {
+        expect(areYouHungry("yes")).toEqual("eat food")
+        expect(areYouHungry("no")).toEqual("keep working")
+      })
+    }) */
+
 
 // --------------------1) Create a function that takes in a number (greater than 2) and returns an array of that length containing the numbers of the Fibonacci.
 
