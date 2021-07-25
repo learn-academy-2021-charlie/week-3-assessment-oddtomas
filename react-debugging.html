@@ -78,15 +78,16 @@
             padding: "10px"
           }
           return(
-            <>
-              <button onClick={}>
+            <> {/*drawCard is undefined because it's missing 'this'   */}
+              <button onClick={this.drawCard}>
                 Click to Draw a Card
-              </button>
-              <button onClick={shuffle}>
+              </button> {/*shuffle is undefined because it's missing 'this'   */}
+              <button onClick={this.shuffle}>
                 Return Cards and Shuffle Deck
               </button>
               <div style={handStyles}>
-                {this.props.hand.map((card, index) => {
+                {/* fix map property undefined? use conditional render?   */}
+                {this.props.hand && this.props.hand.map((card, index) => {
                   return (
                     <div style={cardStyles} key={index}>
                       {card}
